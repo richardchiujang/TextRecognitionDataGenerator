@@ -1,0 +1,276 @@
+# python run.py -t 20 -c 10000 -l bo -w 30 -cs 1 -sw 0 -na 2 -b 3 -tc #ECF0F1 -wd 800 -al 1    
+# python run.py -t 20 -c 10000 -l bo -w 15 -cs 1 -sw 0 -na 2 -b 3 -tc #FDFEFE -wd 400 -al 0 -k 1 -rk -fi
+# python run.py -t 20 -c 10000 -l bo -w 30 -cs 0 -sw 1 -na 2 -d 1 -do 0 -wd 800 -al 2
+# 
+# python run.py -t 20 -c 10000 -l bo -w 10 -cs 0 -sw 0 -na 2 -wd 280 -al 1 -fi
+# python run.py -t 20 -c 10000 -l bo -w 6 -cs 0 -sw 2 -na 2 -wd 280 -al 1 -fi
+# python run.py -t 20 -c 10000 -l bo -w 8 -cs 0 -sw 0 -na 2 -or 1 -wd 280 -al 1 -fi    # 直的用 -wd 參數似乎無效
+# python run.py -t 20 -c 10000 -l bo -w 5 -cs 0 -sw 1 -na 2 -or 1 -wd 280 -al 1 -fi 
+
+# 標準
+python run.py -t 20 -c 200000 -l bo -w 10 -cs 0 -sw 0 -na 2 -wd 280 -al 1 -fi -bl 1 -rbl
+python run.py -t 20 -c 200000 -l bo -w 7 -cs 0 -sw 1 -na 2 -wd 280 -al 1 -fi -bl 1 -rbl
+python run.py -t 20 -c 200000 -l bo -w 10 -cs 0 -sw 0 -na 2 -wd 280 -al 1 -fi -bl 1 -rbl -k 1 -rk
+python run.py -t 20 -c 200000 -l bo -w 7 -cs 0 -sw 1 -na 2 -wd 280 -al 1 -fi -bl 1 -rbl -k 1 -rk
+python run.py -t 20 -c 200000 -l bo -w 10 -cs 0 -sw 0 -na 2 -wd 280 -al 1 -fi -bl 1 -rbl -d 1 -do 0
+python run.py -t 20 -c 200000 -l bo -w 7 -cs 0 -sw 1 -na 2 -wd 280 -al 1 -fi -bl 1 -rbl -d 1 -do 0
+python run.py -t 20 -c 50000 -l bo -w 10 -cs 0 -sw 0 -na 2 -wd 280 -al 1 -fi -bl 1 -rbl -tc "#000000,#888888" -b 3
+python run.py -t 20 -c 50000 -l bo -w 10 -cs 0 -sw 0 -na 2 -wd 280 -al 1 -fi -bl 1 -rbl -tc "#EEEEEE,#FFFFFF" -b 3
+python run.py -t 20 -c 50000 -l bo -w 7 -cs 0 -sw 1 -na 2 -wd 280 -al 1 -fi -bl 1 -rbl -tc "#000000,#888888" -b 3
+python run.py -t 20 -c 50000 -l bo -w 7 -cs 0 -sw 1 -na 2 -wd 280 -al 1 -fi -bl 1 -rbl -tc "#EEEEEE,#FFFFFF" -b 3
+# 直式 # 反白 字間 模糊 背景
+python run.py -t 20 -c 200000 -l bo -w 9 -cs 0 -sw 0 -na 2 -or 1 -al 1 -fi -bl 1 -rbl 
+python run.py -t 20 -c 200000 -l bo -w 5 -cs 0 -sw 1 -na 2 -or 1 -al 1 -fi -bl 1 -rbl 
+python run.py -t 20 -c 200000 -l bo -w 9 -cs 0 -sw 0 -na 2 -or 1 -al 1 -fi -bl 1 -rbl -k 1 -rk 
+python run.py -t 20 -c 200000 -l bo -w 5 -cs 0 -sw 1 -na 2 -or 1 -al 1 -fi -bl 1 -rbl -k 1 -rk 
+python run.py -t 20 -c 50000 -l bo -w 9 -cs 0 -sw 0 -na 2 -or 1 -al 1 -fi -bl 1 -rbl -tc "#000000,#888888" -b 3 
+python run.py -t 20 -c 50000 -l bo -w 5 -cs 0 -sw 1 -na 2 -or 1 -al 1 -fi -bl 1 -rbl -tc "#000000,#888888" -b 3 
+python run.py -t 20 -c 50000 -l bo -w 9 -cs 0 -sw 0 -na 2 -or 1 -al 1 -fi -bl 1 -rbl -tc "#EEEEEE,#FFFFFF" -b 3
+python run.py -t 20 -c 50000 -l bo -w 5 -cs 0 -sw 1 -na 2 -or 1 -al 1 -fi -bl 1 -rbl -tc "#EEEEEE,#FFFFFF" -b 3
+ 
+# 產生英文字 數字 不能用 -wd 280 否則會被截斷
+python run.py -t 20 -c 20000 -w 2 -cs 0 -sw 1 -na 2 -al 1 -fi -b 3 -bl 1 -rbl 
+python run.py -t 20 -c 20000 -w 2 -rs -num -cs 0 -sw 1 -na 2 -al 1 -fi -b 3 -bl 1 -rbl
+python run.py -t 20 -c 20000 -w 2 -cs 0 -sw 1 -na 2 -al 1 -fi -b 3 -bl 1 -rbl -tc "#000000,#888888" 
+python run.py -t 20 -c 20000 -w 2 -rs -num -cs 0 -sw 1 -na 2 -al 1 -fi -b 3 -bl 1 -rbl -tc "#000000,#888888" 
+python run.py -t 20 -c 20000 -w 2 -cs 0 -sw 1 -na 2 -al 1 -fi -b 3 -bl 1 -rbl -tc "#EEEEEE,#FFFFFF" -b 3
+python run.py -t 20 -c 20000 -w 2 -rs -num -cs 0 -sw 1 -na 2 -al 1 -fi -b 3 -bl 1 -rbl -tc "#EEEEEE,#FFFFFF" -b 3
+
+
+
+
+
+# 2023/05/25
+# 產生(圖一)小字(沒 -fi) 置中 無空白 標準字
+python run.py -t 20 -c 300000 -l bo -w 36 -cs 0 -sw 0 -na 2 -wd 888 -al 1 -bl 1 -rbl
+# 產生(圖二)滿字(-fi) 置中 無空白 標準字
+python run.py -t 20 -c 300000 -l bo -w 36 -cs 0 -sw 0 -na 2 -wd 888 -al 1 -fi -bl 1 -rbl
+# 產生(圖三)小字(沒 -fi) 置中 空白 標準字
+python run.py -t 32 -c 300000 -l bo -w 26 -cs 0 -sw 1 -na 2 -wd 888 -al 1 -bl 1 -rbl
+# 產生(圖四)滿字(-fi) 置中 空白 標準字
+python run.py -t 32 -c 300000 -l bo -w 24 -cs 0 -sw 1 -na 2 -wd 888 -al 1 -fi -bl 1 -rbl
+# 產生(圖五)小字(沒 -fi) 置中 無空白 標準字 垂直 (max 839)
+python run.py -t 20 -c 300000 -l bo -w 30 -cs 0 -sw 0 -na 2 -wd 888 -al 1 -bl 1 -rbl -or 1
+# 產生(圖六)滿字(-fi) 置中 無空白 標準字 垂直 (max 823)
+python run.py -t 20 -c 300000 -l bo -w 28 -cs 0 -sw 0 -na 2 -wd 888 -al 1 -fi -bl 1 -rbl -or 1
+# 產生(圖七)小字(沒 -fi) 置中 空白 標準字 垂直 (max )
+python run.py -t 32 -c 300000 -l bo -w 16 -cs 0 -sw 1 -na 2 -wd 888 -al 1 -bl 1 -rbl -or 1
+# 產生(圖八)滿字(-fi) 置中 空白 垂直 (max )
+python run.py -t 32 -c 300000 -l bo -w 14 -cs 0 -sw 1 -na 2 -wd 888 -al 1 -fi -bl 1 -rbl -or 1
+# 目前共240萬樣本
+
+# 2023/05/26
+# 每個資料夾不產生超過10萬個樣本
+# 較多不要-fi的小字，因為框下來的字多事不滿框的，較少上下頂框的
+# 多一些白底黑字 大部分文件都長這樣
+
+# 產生(圖一)小字(沒 -fi) 置中 無空白 標準字
+python run.py -t 32 -c 100000 -l bo -w 36 -cs 0 -sw 0 -na 2 -wd 888 -al 1 -bl 1 -rbl
+# 產生(圖二)滿字(-fi) 置中 無空白 標準字
+python run.py -t 32 -c 00000 -l bo -w 36 -cs 0 -sw 0 -na 2 -wd 888 -al 1 -fi -bl 1 -rbl
+# 產生(圖三)小字(沒 -fi) 置中 空白 標準字
+python run.py -t 32 -c 00000 -l bo -w 26 -cs 0 -sw 1 -na 2 -wd 888 -al 1 -bl 1 -rbl
+# 產生(圖四)滿字(-fi) 置中 空白 標準字
+python run.py -t 32 -c 00000 -l bo -w 24 -cs 0 -sw 1 -na 2 -wd 888 -al 1 -fi -bl 1 -rbl
+# 產生(圖五)小字(沒 -fi) 置中 無空白 標準字 垂直 (max 839)
+python run.py -t 32 -c 00000 -l bo -w 30 -cs 0 -sw 0 -na 2 -wd 888 -al 1 -bl 1 -rbl -or 1
+# 產生(圖六)滿字(-fi) 置中 無空白 標準字 垂直 (max 823)
+python run.py -t 32 -c 00000 -l bo -w 28 -cs 0 -sw 0 -na 2 -wd 888 -al 1 -fi -bl 1 -rbl -or 1
+# 產生(圖七)小字(沒 -fi) 置中 空白 標準字 垂直 (max )
+python run.py -t 32 -c 300000 -l bo -w 16 -cs 0 -sw 1 -na 2 -wd 888 -al 1 -bl 1 -rbl -or 1
+# 產生(圖八)滿字(-fi) 置中 空白 垂直 (max )
+python run.py -t 32 -c 00000 -l bo -w 14 -cs 0 -sw 1 -na 2 -wd 888 -al 1 -fi -bl 1 -rbl -or 1
+
+# 2023/7/27
+# 產生 繁簡中文字典檔 main.txt
+# 注意使用辭典檔 所以沒辦法用 -sw 1 來產生字間空格標籤
+
+conda activate hch_ocr  
+cd C:\develop\TextRecognitionDataGenerator\trdg
+
+python run.py -t 12 --output_dir bo_dictc36wcs3sw0b1 -i texts/bo_dict.txt -c 300000 -l bo -cs 3 -sw 0 -na 2 -wd 888 -b 1 -al 1 -fi -bl 1 -rbl  
+python run.py -t 12 --output_dir bo_dictc30wcs1sw2b1 -i texts/bo_dict.txt -c 300000 -l bo -cs 1 -sw 2 -na 2 -wd 888 -b 1 -al 1 -fi -bl 1 -rbl 
+python run.py -t 12 --output_dir eng10wcs0sw1b1 -c 100000 -w 3 -l en -cs 0 -sw 1 -na 2 -al 1 -fi -bl 1 -rbl -b 1 -wd 888 -tc "#000000,#888888" 
+python run.py -t 12 --output_dir num10wcs0sw1b1 -c 100000 -w 3 -rs -num -cs 0 -sw 1 -na 2 -al 1 -fi -b 1 -bl 1 -rbl -wd 888 -tc "#000000,#888888" 
+python run.py -t 12 --output_dir eng100wcs0sw1b1 -c 1000000 -w 3 -l en -cs 0 -sw 1 -na 2 -al 1 -bl 1 -rbl -b 1 -wd 888
+
+!python "C:/develop/TextRecognitionDataGenerator/trdg/run.py {}".format(
+         -t 32 -c 1000 -l bo -w 36 -cs 0 -sw 0 -na 2 -wd 888 -al 1 -bl 1 -rbl --output_dir demo_trdg)
+
+
+################
+2023/09/05
+
+echo # cs3 sw0 使用 -i 時 -sw 無作用(包含產生的圖以及產生的標籤檔案)， 所以都設定 -sw 0
+echo # 沒有 -fi  時 上下空白各約 6 pixels  但使用時 上下也各約 5 pixels
+echo # 使用 -m 0 會產生下方空間為0的樣本(上方會空著)，搭配 -fi 才會產生上下都為 -m n 距離的樣本
+echo # 使用 -k 1 -rk 傾斜的長字串字會變小 最大的空白大約 12 
+echo # 資料夾名稱規則 bo_c 30w cs2 sw1 b1 m2 fi k1 d3 do2 tc 
+echo # 中文不要用 -sw 1 指令，讓標籤沒空白，中文字辨識比較會連貫 
+
+echo # 最基本的文字  # 灰底 彩色字 # 最基本小字 # 傾斜小字
+python run.py -t 12 --output_dir bo_c2w_w30_cs3_sw0_b1_m2_fi    -c 20000 -l bo -w 30 -cs 3 -sw 0 -na 2 -wd 1153 -b 1 -al 1 -bl 1 -rbl -m 2 -fi
+python run.py -t 12 --output_dir bo_c1w_w30_cs3_sw0_b0_m3_fi_tc -c 10000 -l bo -w 30 -cs 3 -sw 0 -na 2 -wd 1153 -b 0 -al 1 -bl 1 -rbl -m 3 -fi -tc "#000000,#666666"
+python run.py -t 12 --output_dir bo_c2w_w36_cs3_sw0_b1          -c 20000 -l bo -w 36 -cs 3 -sw 0 -na 2 -wd 1153 -b 1 -al 1 -bl 1 -rbl
+python run.py -t 12 --output_dir bo_c1w_w20_cs3_sw0_b0_m1_fi_k1 -c 10000 -l bo -w 20 -cs 3 -sw 0 -na 2 -wd 1153 -b 0 -al 1 -bl 1 -rbl -k 1 -rk -m 1 -fi
+
+echo # 破碎大字 -d 1: Sine wave, 2: Cosine wave, 3: Random ; -do 0 垂直 1 水平 2 both 
+python run.py -t 12 --output_dir bo_c1w_w36_cs3_sw0_b0_m1_fi_d1_do0 -c 10000 -l bo -w 36 -cs 3 -sw 0 -na 2 -wd 1153 -b 0 -al 1 -bl 1 -rbl -m 1 -fi -d 1 -do 0
+python run.py -t 12 --output_dir bo_c1w_w36_cs3_sw0_b0_m1_fi_d2_do0 -c 10000 -l bo -w 36 -cs 3 -sw 0 -na 2 -wd 1153 -b 0 -al 1 -bl 1 -rbl -m 1 -fi -d 2 -do 0
+python run.py -t 12 --output_dir bo_c1w_w36_cs3_sw0_b0_m1_fi_d3_do0 -c 10000 -l bo -w 36 -cs 3 -sw 0 -na 2 -wd 1153 -b 0 -al 1 -bl 1 -rbl -m 1 -fi -d 3 -do 0
+python run.py -t 12 --output_dir bo_c1w_w28_cs3_sw0_b0_m1_fi_d1_do1 -c 10000 -l bo -w 28 -cs 3 -sw 0 -na 2 -wd 1153 -b 0 -al 1 -bl 1 -rbl -m 1 -fi -d 1 -do 1
+python run.py -t 12 --output_dir bo_c1w_w28_cs3_sw0_b0_m1_fi_d2_do1 -c 10000 -l bo -w 28 -cs 3 -sw 0 -na 2 -wd 1153 -b 0 -al 1 -bl 1 -rbl -m 1 -fi -d 2 -do 1
+python run.py -t 12 --output_dir bo_c1w_w28_cs3_sw0_b0_m1_fi_d3_do1 -c 10000 -l bo -w 28 -cs 3 -sw 0 -na 2 -wd 1153 -b 0 -al 1 -bl 1 -rbl -m 1 -fi -d 3 -do 1
+python run.py -t 12 --output_dir bo_c1w_w36_cs3_sw0_b0_m1_fi_d1_do2 -c 10000 -l bo -w 36 -cs 3 -sw 0 -na 2 -wd 1153 -b 0 -al 1 -bl 1 -rbl -m 1 -fi -d 1 -do 2
+python run.py -t 12 --output_dir bo_c1w_w36_cs3_sw0_b0_m1_fi_d2_do2 -c 10000 -l bo -w 36 -cs 3 -sw 0 -na 2 -wd 1153 -b 0 -al 1 -bl 1 -rbl -m 1 -fi -d 2 -do 2
+python run.py -t 12 --output_dir bo_c1w_w33_cs3_sw0_b0_m1_fi_d3_do2 -c 10000 -l bo -w 33 -cs 3 -sw 0 -na 2 -wd 1153 -b 0 -al 1 -bl 1 -rbl -m 1 -fi -d 3 -do 2
+
+echo # 產生反白字
+python run.py -t 12 --output_dir bo_c1w_w30_cs3_sw0_b3_m3_tc        -c 20000 -l bo -w 30 -cs 3 -sw 0 -na 2 -wd 1153 -b 3 -al 1 -bl 1 -rbl -m 3 -fi -tc "#000000,#666666"
+python run.py -t 12 --output_dir bo_c1w_w36_cs3_sw0_b3_tc           -c 20000 -l bo -w 36 -cs 3 -sw 0 -na 2 -wd 1153 -b 3 -al 1 -bl 1 -rbl -fi -tc "#000000,#666666" 
+
+echo # 產生英文字 數字  -sw 1 
+python run.py -t 12 --output_dir eng_c2w_w5_cs2_sw1_b1              -c 20000 -l en -w 5 -cs 2 -sw 1 -na 2 -wd 1153 -b 1 -al 1 -bl 1 -rbl 
+python run.py -t 12 --output_dir eng_c2w_w4_cs2_sw1_b1_m2_fi        -c 20000 -l en -w 4 -cs 2 -sw 1 -na 2 -wd 1153 -b 1 -al 1 -bl 1 -rbl -m 2 -fi
+python run.py -t 12 --output_dir eng_c1w_w4_cs2_sw1_b3_m2_fi_tc     -c 10000 -l en -w 4 -cs 2 -sw 1 -na 2 -wd 1153 -b 3 -al 1 -bl 1 -rbl -m 2 -fi -tc "#000000,#666666"
+python run.py -t 12 --output_dir eng_rs_c0w_w4_cs2_sw1_b3_m2_fi_tc  -c 5000  -rs -l en -w 4 -cs 2 -sw 1 -na 2 -wd 1153 -b 3 -al 1 -bl 1 -rbl -m 2 -fi -tc "#000000,#666666"
+python run.py -t 12 --output_dir num_c1w_w5_cs2_sw1_b3_m3_fi_tc     -c 10000 -rs -num -w 5 -cs 2 -sw 1 -na 2 -wd 1153 -b 3 -al 1 -bl 1 -rbl -m 3 -fi -tc "#000000,#666666"
+python run.py -t 12 --output_dir num_c1w_w7_cs2_sw1_b1              -c 10000 -rs -num -w 7 -cs 2 -sw 1 -na 2 -wd 1153 -b 1 -al 1 -bl 1 -rbl
+
+echo # 產生中文直式樣本
+python run.py -t 12 --output_dir bo_or_c1w_w30_cs2_sw0_b1           -c 10000 -l bo -w 30 -cs 2 -sw 0 -na 2 -b 1 -al 1 -bl 1 -rbl -or 1
+python run.py -t 12 --output_dir bo_or_c2w_w24_cs2_sw0_b1_m2_fi     -c 20000 -l bo -w 24 -cs 2 -sw 0 -na 2 -b 1 -al 1 -bl 1 -rbl -or 1 -m2 -fi 
+python run.py -t 12 --output_dir bo_or_c1w_w24_cs2_sw0_b1_m2_fi_tc  -c 10000 -l bo -w 24 -cs 2 -sw 0 -na 2 -b 1 -al 1 -bl 1 -rbl -or 1 -m2 -fi -tc "#000000,#666666"
+
+echo # 產生字典檔樣本 -rs 隨機取樣
+python run.py -t 12 --output_dir bo_dict_c3w_cs3_sw0_b0_m3_fi        -rs -i texts/bo_dict.txt -c 30000 -l bo -cs 3 -sw 0 -na 2 -wd 1153 -b 0 -al 1 -bl 1 -rbl -m 3 -fi 
+python run.py -t 12 --output_dir bo_dict_c3w_cs4_sw0_b0_m2_fi_d3_do2 -rs -i texts/bo_dict.txt -c 30000 -l bo -cs 3 -sw 0 -na 2 -wd 1153 -b 0 -al 1 -bl 1 -rbl -m 2 -fi -d 3 -do 2
+python run.py -t 12 --output_dir bo_dict_c3w_cs2_sw0_b0              -rs -i texts/bo_dict.txt -c 30000 -l bo -cs 3 -sw 0 -na 2 -wd 1153 -b 0 -al 1 -bl 1 -rbl 
+python run.py -t 12 --output_dir bo_dict_or_c3w_cs2_sw0_b0           -rs -i texts/bo_dict.txt -c 30000 -l bo -cs 3 -sw 0 -na 2 -b 0 -al 1 -bl 1 -rbl -or 1
+python run.py -t 12 --output_dir bo_dict_or_c3w_cs2_sw0_b1_tc        -rs -i texts/bo_dict.txt -c 30000 -l bo -cs 3 -sw 0 -na 2 -b 1 -al 1 -bl 1 -rbl -or 1 -tc "#000000,#666666"
+
+echo # -b 2 產生波紋背景 每秒產生約 30~40 樣本，速度奇慢無比，所以只生少量就好 
+python run.py -t 12 --output_dir bo_c1w_w30_cs3_sw0_b2_m2_fi    -c 10000 -l bo -w 30 -cs 3 -sw 0 -na 2 -wd 1153 -b 2 -al 1 -bl 1 -rbl -m 2 -fi
+python run.py -t 12 --output_dir bo_c1w_w30_cs3_sw0_b2          -c 10000 -l bo -w 30 -cs 3 -sw 0 -na 2 -wd 1153 -b 2 -al 1 -bl 1 -rbl
+
+
+
+
+
+
+
+
+
+usage: trdg [-h] [--output_dir [OUTPUT_DIR]] [-i [INPUT_FILE]] [-l [LANGUAGE]]
+            -c [COUNT] [-rs] [-let] [-num] [-sym] [-w [LENGTH]] [-r]
+            [-f [FORMAT]] [-t [THREAD_COUNT]] [-e [EXTENSION]]
+            [-k [SKEW_ANGLE]] [-rk] [-wk] [-bl [BLUR]] [-rbl]
+            [-b [BACKGROUND]] [-hw] [-na NAME_FORMAT] [-d [DISTORSION]]
+            [-do [DISTORSION_ORIENTATION]] [-wd [WIDTH]] [-al [ALIGNMENT]]
+            [-or [ORIENTATION]] [-tc [TEXT_COLOR]] [-sw [SPACE_WIDTH]]
+            [-cs [CHARACTER_SPACING]] [-m [MARGINS]] [-fi] [-ft [FONT]]
+            [-ca [CASE]]
+
+Generate synthetic text data for text recognition.
+
+optional arguments:
+  -h, --help            show this help message and exit
+  --output_dir [OUTPUT_DIR]
+                        The output directory
+  -i [INPUT_FILE], --input_file [INPUT_FILE]
+                        When set, this argument uses a specified text file as
+                        source for the text
+  -l [LANGUAGE], --language [LANGUAGE]
+                        The language to use, should be fr (French), en
+                        (English), es (Spanish), de (German), or cn (Chinese).
+  -c [COUNT], --count [COUNT]
+                        The number of images to be created.
+  -rs, --random_sequences
+                        Use random sequences as the source text for the
+                        generation. Set '-let','-num','-sym' to use
+                        letters/numbers/symbols. If none specified, using all
+                        three.
+  -let, --include_letters
+                        Define if random sequences should contain letters.
+                        Only works with -rs
+  -num, --include_numbers
+                        Define if random sequences should contain numbers.
+                        Only works with -rs
+  -sym, --include_symbols
+                        Define if random sequences should contain symbols.
+                        Only works with -rs
+  -w [LENGTH], --length [LENGTH]
+                        Define how many words should be included in each
+                        generated sample. If the text source is Wikipedia,
+                        this is the MINIMUM length
+  -r, --random          Define if the produced string will have variable word
+                        count (with --length being the maximum)
+  -f [FORMAT], --format [FORMAT]
+                        Define the height of the produced images if
+                        horizontal, else the width
+  -t [THREAD_COUNT], --thread_count [THREAD_COUNT]
+                        Define the number of thread to use for image
+                        generation
+  -e [EXTENSION], --extension [EXTENSION]
+                        Define the extension to save the image with
+  -k [SKEW_ANGLE], --skew_angle [SKEW_ANGLE]
+                        Define skewing angle of the generated text. In
+                        positive degrees
+  -rk, --random_skew    When set, the skew angle will be randomized between
+                        the value set with -k and it's opposite
+  -wk, --use_wikipedia  Use Wikipedia as the source text for the generation,
+                        using this paremeter ignores -r, -n, -s
+  -bl [BLUR], --blur [BLUR]
+                        Apply gaussian blur to the resulting sample. Should be
+                        an integer defining the blur radius
+  -rbl, --random_blur   When set, the blur radius will be randomized between 0
+                        and -bl.
+  -b [BACKGROUND], --background [BACKGROUND]
+                        Define what kind of background to use. 0: Gaussian
+                        Noise, 1: Plain white, 2: Quasicrystal, 3: Pictures
+  -hw, --handwritten    Define if the data will be "handwritten" by an RNN
+  -na NAME_FORMAT, --name_format NAME_FORMAT
+                        Define how the produced files will be named. 0:
+                        [TEXT]_[ID].[EXT], 1: [ID]_[TEXT].[EXT] 2: [ID].[EXT]
+                        + one file labels.txt containing id-to-label mappings
+  -d [DISTORSION], --distorsion [DISTORSION]
+                        Define a distorsion applied to the resulting image. 0:
+                        None (Default), 1: Sine wave, 2: Cosine wave, 3:
+                        Random
+  -do [DISTORSION_ORIENTATION], --distorsion_orientation [DISTORSION_ORIENTATION]
+                        Define the distorsion's orientation. Only used if -d
+                        is specified. 0: Vertical (Up and down), 1: Horizontal
+                        (Left and Right), 2: Both
+  -wd [WIDTH], --width [WIDTH]
+                        Define the width of the resulting image. If not set it
+                        will be the width of the text + 10. If the width of
+                        the generated text is bigger that number will be used
+  -al [ALIGNMENT], --alignment [ALIGNMENT]
+                        Define the alignment of the text in the image. Only
+                        used if the width parameter is set. 0: left, 1:
+                        center, 2: right
+  -or [ORIENTATION], --orientation [ORIENTATION]
+                        Define the orientation of the text. 0: Horizontal, 1:
+                        Vertical
+  -tc [TEXT_COLOR], --text_color [TEXT_COLOR]
+                        Define the text's color, should be either a single hex
+                        color or a range in the ?,? format.
+  -sw [SPACE_WIDTH], --space_width [SPACE_WIDTH]
+                        Define the width of the spaces between words. 2.0
+                        means twice the normal space width
+  -cs [CHARACTER_SPACING], --character_spacing [CHARACTER_SPACING]
+                        Define the width of the spaces between characters. 2
+                        means two pixels
+  -m [MARGINS], --margins [MARGINS]
+                        Define the margins around the text when rendered. In
+                        pixels
+  -fi, --fit            Apply a tight crop around the rendered text
+  -ft [FONT], --font [FONT]
+                        Define font to be used
+  -ca [CASE], --case [CASE]
+                        Generate upper or lowercase only. arguments: upper or
+                        lower. Example: --case upper
+						
+C:\Users\rchiu\AppData\Local\Temp\ipykernel_9424\3504965287.py:9: 
+DeprecationWarning: LINEAR is deprecated and will be removed in Pillow 10 (2023-07-01). Use BILINEAR or Resampling.BILINEAR instead.
+  img = ImageOps.pad(img, (w_max, h), method=Image.LINEAR, color=(255,255,255), centering=(0, 0)) 						
