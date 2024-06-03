@@ -13,7 +13,8 @@ try:
     # from trdg import handwritten_text_generator
     import handwritten_text_generator
 except ImportError as e:
-    print("Missing modules for handwritten text generation.")
+    pass
+    # print("Missing modules for handwritten text generation.")
 
 
 class FakeTextDataGenerator(object):

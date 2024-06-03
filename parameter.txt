@@ -36,7 +36,8 @@ python run.py -t 20 -c 20000 -w 2 -rs -num -cs 0 -sw 1 -na 2 -al 1 -fi -b 3 -bl 
 python run.py -t 20 -c 20000 -w 2 -cs 0 -sw 1 -na 2 -al 1 -fi -b 3 -bl 1 -rbl -tc "#EEEEEE,#FFFFFF" -b 3
 python run.py -t 20 -c 20000 -w 2 -rs -num -cs 0 -sw 1 -na 2 -al 1 -fi -b 3 -bl 1 -rbl -tc "#EEEEEE,#FFFFFF" -b 3
 
-
+# 專門產生細明體類似的自型
+python run.py -t 20 -c 5000 -l bo -w 7 -cs 0 -sw 1 -na 2 -wd 280 -al 1 -fi -bl 1 -rbl
 
 
 
@@ -154,7 +155,25 @@ python run.py -t 12 --output_dir bo_c1w_w30_cs3_sw0_b2_m2_fi    -c 10000 -l bo -
 python run.py -t 12 --output_dir bo_c1w_w30_cs3_sw0_b2          -c 10000 -l bo -w 30 -cs 3 -sw 0 -na 2 -wd 1153 -b 2 -al 1 -bl 1 -rbl
 
 
-
+##################################
+# 2024/04/21
+# 主要修改 都加 -fi -m 2 -al 對齊 0,1,2
+# 產生(圖一) 置左 無空白 標準字 繁中
+python run.py -t 32 -c 300000 -l zh -w 28 -cs 0 -sw 0 -na 2 -wd 888 -al 0 -bl 1 -rbl -fi -m 2
+# 產生(圖二) 置左 無空白 標準字 簡中 
+python run.py -t 32 -c 300000 -l cn -w 28 -cs 0 -sw 0 -na 2 -wd 888 -al 0 -bl 1 -rbl -fi -m 2
+# 產生(圖三) 置中 空白 標準字 繁中
+python run.py -t 32 -c 300000 -l zh -w 18 -cs 0 -sw 1 -na 2 -wd 888 -al 1 -bl 1 -rbl -fi -m 2
+# 產生(圖四) 置中 空白 標準字 簡中
+python run.py -t 32 -c 300000 -l cn -w 18 -cs 0 -sw 1 -na 2 -wd 888 -al 1 -bl 1 -rbl -fi -m 2 
+# 產生(圖五) 只會置中 無空白 標準字 垂直 (max 839) 繁中
+python run.py -t 32 -c 300000 -l zh -w 22 -cs 0 -sw 0 -na 2 -wd 888 -bl 1 -rbl -or 1 -fi -m 2 
+# 產生(圖六) 只會置中 無空白 標準字 垂直 (max 823) 簡中
+python run.py -t 24 -c 300000 -l cn -w 22 -cs 0 -sw 0 -na 2 -wd 888 -bl 1 -rbl -or 1 -fi -m 2 
+# 產生(圖七) 只會置中 空白 標準字 垂直 (max ) 繁中
+python run.py -t 24 -c 300000 -l zh -w 12 -cs 0 -sw 1 -na 2 -wd 888 -bl 1 -rbl -or 1 -fi -m 2 
+# 產生(圖八) 只會置中 空白 標準字 垂直 (max ) 簡中
+python run.py -t 24 -c 300000 -l cn -w 12 -cs 0 -sw 1 -na 2 -wd 888 -bl 1 -rbl -or 1 -fi -m 2 
 
 
 
