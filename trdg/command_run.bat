@@ -6,14 +6,14 @@ remark
 )
 
 REM color
-python run.py -t 31 --output_dir output\num_c1w_w6_cs1_sw1_na2_wd1153_b1_al1_rbl_fi_tc           -c 10000 -rs -num -w 6 -cs 1 -sw 1 -na 2 -wd 1153 -b 1 -al 1 -bl 1 -rbl -fi -tc "#000000,#7d7d7d"
-python run.py -t 31 --output_dir output\let_c1w_w7_cs1_sw1_na2_wd1153_b1_al0_rbl_fi_tc           -c 10000 -rs -let -w 7 -cs 1 -sw 1 -na 2 -wd 1153 -b 1 -al 0 -bl 1 -rbl -fi -tc "#000000,#7d7d7d"
-python run.py -t 31 --output_dir output\let_num_c1w_w6_cs1_sw1_na2_wd1153_b1_al2_rbl_m0_tc       -c 10000 -rs -let -num -w 6 -cs 1 -sw 1 -na 2 -wd 1153 -b 1 -al 2 -bl 1 -rbl -m 0 -tc "#000000,#7d7d7d"
-python run.py -t 31 --output_dir output\let_num_c1w_w6_cs1_sw1_na2_wd1153_b3_al2_rbl_m3_tc       -c 10000 -rs -let -num -w 6 -cs 1 -sw 1 -na 2 -wd 1153 -b 3 -al 2 -bl 1 -rbl -m 3 -tc "#000000,#7d7d7d"
-python run.py -t 31 --output_dir output\let_num_c1w_w7_cs1_sw1_na2_wd1153_b3_al1_rbl_fi_tc       -c 10000 -rs -let -num -w 7 -cs 1 -sw 1 -na 2 -wd 1153 -b 3 -al 1 -bl 1 -rbl -fi -tc "#000000,#7d7d7d"
-python run.py -t 31 --output_dir output\ibodict_c10w_cs0_na2_wd1153_b0_al1_rbl_m2_tc_ft           -i texts\bo_dict.txt -c 100000 -l bo -cs 0 -na 2 -wd 1153 -b 0 -al 1 -bl 1 -rbl -m 2 -tc "#000000,#7d7d7d" -ft fonts\zh\mingliu.ttc
-python run.py -t 31 --output_dir output\or_lzh_c1w_w26_cs0_sw0_na2_b1_al2_rbl_fi                 -c 10000 -l zh -w 26 -cs 0 -sw 0 -na 2 -b 1 -al 2 -bl 1 -rbl -fi -or 1 -tc "#000000,#7d7d7d"
-python run.py -t 31 --output_dir output\or_lcn_c1w_w26_cs0_sw0_na2_b1_al2_rbl_fi                 -c 10000 -l cn -w 26 -cs 0 -sw 0 -na 2 -b 1 -al 2 -bl 1 -rbl -fi -or 1 -tc "#000000,#7d7d7d"
+python run.py -t 31 --output_dir output\num_c1w_w6_cs1_sw1_na2_wd1153_b1_al1_rbl_fi_tc           -c 30000 -rs -num -w 6 -cs 1 -sw 1 -na 2 -wd 1153 -b 1 -al 1 -bl 1 -rbl -fi -tc "#000000,#7d7d7d"
+python run.py -t 31 --output_dir output\let_c1w_w7_cs1_sw1_na2_wd1153_b1_al0_rbl_fi_tc           -c 30000 -rs -let -w 7 -cs 1 -sw 1 -na 2 -wd 1153 -b 1 -al 0 -bl 1 -rbl -fi -tc "#000000,#7d7d7d"
+python run.py -t 31 --output_dir output\let_num_c1w_w6_cs1_sw1_na2_wd1153_b1_al2_rbl_m0_tc       -c 30000 -rs -let -num -w 6 -cs 1 -sw 1 -na 2 -wd 1153 -b 1 -al 2 -bl 1 -rbl -m 0 -tc "#000000,#7d7d7d"
+python run.py -t 31 --output_dir output\let_num_c1w_w6_cs1_sw1_na2_wd1153_b3_al2_rbl_m3_tc       -c 30000 -rs -let -num -w 6 -cs 1 -sw 1 -na 2 -wd 1153 -b 3 -al 2 -bl 1 -rbl -m 3 -tc "#000000,#7d7d7d"
+python run.py -t 31 --output_dir output\let_num_c1w_w7_cs1_sw1_na2_wd1153_b3_al1_rbl_fi_tc       -c 30000 -rs -let -num -w 7 -cs 1 -sw 1 -na 2 -wd 1153 -b 3 -al 1 -bl 1 -rbl -fi -tc "#000000,#7d7d7d"
+python run.py -t 31 --output_dir output\ibotext1_c10w_cs0_na2_wd1153_b0_al1_rbl_m2_tc_ft           -i texts\botext_1.txt -c 100000 -l bo -cs 0 -na 2 -wd 1153 -b 0 -al 1 -bl 1 -rbl -m 2 -tc "#000000,#7d7d7d" -ft fonts\zh\mingliu.ttc
+python run.py -t 31 --output_dir output\or_lzh_c1w_w26_cs0_sw0_na2_b1_al2_rbl_fi                 -c 30000 -l zh -w 26 -cs 0 -sw 0 -na 2 -b 1 -al 2 -bl 1 -rbl -fi -or 1 -tc "#000000,#7d7d7d"
+python run.py -t 31 --output_dir output\or_lcn_c1w_w26_cs0_sw0_na2_b1_al2_rbl_fi                 -c 30000 -l cn -w 26 -cs 0 -sw 0 -na 2 -b 1 -al 2 -bl 1 -rbl -fi -or 1 -tc "#000000,#7d7d7d"
 
 REM -num and -let must combind with -rs and -sw 1
 REM gen number and latin smaples , target 100k
@@ -90,13 +90,21 @@ python run.py -t 31 --output_dir output\lcn_c2w_w30_cs1_sw0_na2_wd1153_b1_al1_rb
 python run.py -t 31 --output_dir output\lcn_c2w_w40_cs0_sw0_na2_wd1153_b1_al2_rbl_m0_do          -c 20000 -l cn -w 40 -cs 0 -sw 0 -na 2 -wd 1153 -b 1 -al 2 -bl 1 -rbl -m 0 -d 1 -do 0
 
 REM -i input dict file
-python run.py -t 31 --output_dir output\imain_1_c5w_cs1_na2_wd1153_b0_al0_rbl_m0                 -i texts\main_1.txt -c 50000 -l bo -cs 1 -na 2 -wd 1153 -b 0 -al 0 -bl 1 -rbl -m 0
-python run.py -t 31 --output_dir output\imain_2_c5w_cs2_na2_wd1153_b1_al2_rbl_m1                 -i texts\main_2.txt -c 50000 -l bo -cs 2 -na 2 -wd 1153 -b 1 -al 2 -bl 1 -rbl -m 1
-python run.py -t 31 --output_dir output\imain_3_c5w_cs1_na2_wd1153_b0_al0_rbl_m0_rk              -i texts\main_3.txt -c 50000 -l bo -cs 1 -na 2 -wd 1153 -b 1 -al 0 -bl 1 -rbl -m 0 -k 1 -rk
-python run.py -t 31 --output_dir output\imain_4_c5w_cs1_na2_wd1153_b0_al1_rbl_m3                 -i texts\main_4.txt -c 50000 -l bo -cs 1 -na 2 -wd 1153 -b 0 -al 1 -bl 1 -rbl -m 3
-python run.py -t 31 --output_dir output\random_1_c5w_cs1_na2_wd1153_b0_al0_rbl_m0                -i texts\random_1.txt -c 50000 -l bo -cs 1 -na 2 -wd 1153 -b 0 -al 0 -bl 1 -rbl -m 0
-python run.py -t 31 --output_dir output\random_2_c5w_cs1_na2_wd1153_b0_al1_rbl_m1                -i texts\random_2.txt -c 50000 -l bo -cs 1 -na 2 -wd 1153 -b 0 -al 1 -bl 1 -rbl -m 1
-python run.py -t 31 --output_dir output\random_3_c5w_cs1_na2_wd1153_b0_al2_rbl_m2                -i texts\random_3.txt -c 50000 -l bo -cs 1 -na 2 -wd 1153 -b 0 -al 2 -bl 1 -rbl -m 2
+python run.py -t 31 --output_dir output\ibotext1_c5w_cs1_na2_wd1153_b0_al0_rbl_m3                -i texts\botext_1.txt -c 50000 -l bo -cs 1 -na 2 -wd 1153 -b 0 -al 0 -bl 1 -rbl -m 0
+python run.py -t 31 --output_dir output\ibotext2_c5w_cs2_na2_wd1153_b1_al2_rbl_m2                -i texts\botext_2.txt -c 50000 -l bo -cs 2 -na 2 -wd 1153 -b 1 -al 2 -bl 1 -rbl -m 3
+python run.py -t 31 --output_dir output\ibotext3_c5w_cs1_na2_wd1153_b0_al0_rbl_m1_rk             -i texts\botext_3.txt -c 50000 -l bo -cs 1 -na 2 -wd 1153 -b 1 -al 0 -bl 1 -rbl -m 1 -k 1 -rk
+python run.py -t 31 --output_dir output\ibodict_c5w_cs1_na2_wd1153_b0_al1_rbl_m2                 -i texts\bo_dict.txt  -c 50000 -l bo -cs 1 -na 2 -wd 1153 -b 0 -al 1 -bl 1 -rbl -m 2
+python run.py -t 31 --output_dir output\irandom1_c5w_cs1_na2_wd1153_b0_al0_rbl_m3                -i texts\random_1.txt -c 50000 -l bo -cs 1 -na 2 -wd 1153 -b 0 -al 0 -bl 1 -rbl -m 0
+python run.py -t 31 --output_dir output\irandom2_c5w_cs1_na2_wd1153_b0_al1_rbl_m2                -i texts\random_2.txt -c 50000 -l bo -cs 1 -na 2 -wd 1153 -b 0 -al 1 -bl 1 -rbl -m 1
+python run.py -t 31 --output_dir output\irandom3_c5w_cs1_na2_wd1153_b0_al2_rbl_m3                -i texts\random_3.txt -c 50000 -l bo -cs 1 -na 2 -wd 1153 -b 0 -al 2 -bl 1 -rbl -m 2
+
+python run.py -t 31 --output_dir output\ibotext1_c5w_cs1_na2_wd1153_b0_al0_rbl_m7                -i texts\botext_1.txt -c 50000 -l bo -cs 1 -na 2 -wd 1153 -b 0 -al 0 -bl 1 -rbl -m 7
+python run.py -t 31 --output_dir output\ibotext2_c5w_cs2_na2_wd1153_b1_al2_rbl_m6                -i texts\botext_2.txt -c 50000 -l bo -cs 2 -na 2 -wd 1153 -b 1 -al 2 -bl 1 -rbl -m 6
+python run.py -t 31 --output_dir output\ibotext3_c5w_cs1_na2_wd1153_b0_al0_rbl_m5_rk             -i texts\botext_3.txt -c 50000 -l bo -cs 1 -na 2 -wd 1153 -b 1 -al 0 -bl 1 -rbl -m 5 -k 1 -rk
+python run.py -t 31 --output_dir output\ibodict_c5w_cs1_na2_wd1153_b0_al1_rbl_m6                 -i texts\bo_dict.txt  -c 50000 -l bo -cs 1 -na 2 -wd 1153 -b 0 -al 1 -bl 1 -rbl -m 6
+python run.py -t 31 --output_dir output\irandom1_c5w_cs1_na2_wd1153_b0_al0_rbl_m7                -i texts\random_1.txt -c 50000 -l bo -cs 1 -na 2 -wd 1153 -b 0 -al 0 -bl 1 -rbl -m 7
+python run.py -t 31 --output_dir output\irandom2_c5w_cs1_na2_wd1153_b0_al1_rbl_m5                -i texts\random_2.txt -c 50000 -l bo -cs 1 -na 2 -wd 1153 -b 0 -al 1 -bl 1 -rbl -m 5
+python run.py -t 31 --output_dir output\irandom3_c5w_cs1_na2_wd1153_b0_al2_rbl_m4                -i texts\random_3.txt -c 50000 -l bo -cs 1 -na 2 -wd 1153 -b 0 -al 2 -bl 1 -rbl -m 4
 
 REM vertical chinese sample
 python run.py -t 31 --output_dir output\or_lzh_c1w_w26_cs0_sw0_na2_b0_al0_rbl_m1                 -c 10000 -l zh -w 26 -cs 0 -sw 0 -na 2 -b 0 -al 0 -bl 1 -rbl -m 1 -or 1
